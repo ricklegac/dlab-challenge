@@ -1,24 +1,29 @@
 // src/Welcome.js
 import React from 'react';
+import dTalentLogo from './dTalentLogo.png';
 import './Welcome.css';
-import logo from './dTalentLogo.png'; // Importa el logo
 
-const Welcome = () => {
+const Welcome = ({ firstName, onShowEmployees }) => {
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    window.location.reload();
+  };
+
   return (
     <div className="welcome-container">
-      <aside className="sidebar">
-        <img src={logo} alt="Logo" className="logo" /> {/* Muestra el logo */}
+      <div className="menu-top">
+        <img src={dTalentLogo} alt="Logo" className="logo" />
         <ul>
-          <li>Empleado</li>
+          <li onClick={onShowEmployees}>Empleado</li>
           <li>Recibos</li>
           <li>Comunicado</li>
           <li>Configuración</li>
         </ul>
-      </aside>
-      <main className="main-content">
-        <h2>Bienvenido</h2>
-        <p>Selecciona una opción del menú para continuar.</p>
-      </main>
+      </div>
+      <div className="footer">
+        Bienvenido, {firstName}
+        <button onClick={handleLogout} className="logout-button">...</button>
+      </div>
     </div>
   );
 };

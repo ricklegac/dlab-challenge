@@ -1,0 +1,63 @@
+.employee-list {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    margin: 0;
+  }
+  
+  .header-buttons button {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .import-button {
+    background-color: white;
+    color: black;
+  }
+  
+  .new-employee-button {
+    background-color: blue;
+    color: white;
+  }
+  
+  .sort-section {
+    margin-bottom: 10px;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .employee-table th, .employee-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .employee-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  .inactive {
+    background-color: red;
+    color: white;
+  }
+  

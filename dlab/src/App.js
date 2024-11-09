@@ -1,18 +1,24 @@
 // src/App.js
 import React, { useState } from 'react';
 import Login from './Login';
-import Welcome from './Welcome';
+import Dashboard from './Dashboard';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [firstName, setFirstName] = useState('');
 
-  const handleLoginSuccess = () => {
+  const handleLoginSuccess = (name) => {
     setIsLoggedIn(true);
+    setFirstName(name);
   };
 
   return (
     <div>
-      {isLoggedIn ? <Welcome /> : <Login onLoginSuccess={handleLoginSuccess} />}
+      {isLoggedIn ? (
+        <Dashboard firstName={firstName} />
+      ) : (
+        <Login onLoginSuccess={handleLoginSuccess} />
+      )}
     </div>
   );
 };

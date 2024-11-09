@@ -1,45 +1,100 @@
-/* Estilos para el contenedor principal */
 .welcome-container {
-    display: flex;
-    height: 100vh;
-    background-color: #f4f4f4;
-  }
-  
-  /* Estilos para la barra lateral */
-  .sidebar {
-    width: 200px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  
-  .sidebar h3 {
-    margin-top: 0;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    padding: 10px 0;
-    cursor: pointer;
-  }
-  
-  .sidebar li:hover {
-    background-color: #555;
-  }
-  
-  /* Estilos para el contenido principal */
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-  }
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
 
-  .logo {
-    width: 150px; 
-    margin-bottom: 20px;
-  }
-  
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #555;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: #ccc;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.menu-dropdown {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-dropdown button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  color: #ccc;
+}
+

@@ -20,9 +20,10 @@ const Login = ({ onLoginSuccess }) => {
 
       if (response.ok) {
         const data = await response.json();
+        console.log('Data:', data); // Para verificar la estructura
         localStorage.setItem('token', data.token);
         setError('');
-        onLoginSuccess(); // Llama al callback para redirigir a Welcome
+        onLoginSuccess(data.user.firstName); // Ajusta para acceder a `firstName` dentro de `user`
       } else {
         setError('Invalid username or password');
       }
