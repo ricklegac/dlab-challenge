@@ -24,7 +24,8 @@ const Login = ({ onLoginSuccess }) => {
         const data = await response.json();
         localStorage.setItem('token', data.token);
         setError('');
-        onLoginSuccess(data.user.firstName);
+        onLoginSuccess(data.user.firstName, data.user.initials);
+        console.log('API Response:', data);
       } else {
         setError('Invalid username or password');
       }
@@ -59,6 +60,10 @@ const Login = ({ onLoginSuccess }) => {
           <button type="submit" className="login-button">Login</button>
         </form>
         {error && <p className="error-text">{error}</p>}
+        {/* Enlace para "¿Olvidaste tu contraseña?" */}
+        <p className="forgot-password">
+          <a href="/reset-password">¿Olvidaste tu contraseña?</a>
+        </p>
       </div>
     </div>
   );

@@ -1,63 +1,102 @@
+/* src/EmployeeList.css */
+
 .employee-list {
-    width: 80%;
-    margin: 20px auto;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .header h2 {
-    margin: 0;
-  }
-  
-  .header-buttons button {
-    margin-left: 10px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .import-button {
-    background-color: white;
-    color: black;
-  }
-  
-  .new-employee-button {
-    background-color: blue;
-    color: white;
-  }
-  
-  .sort-section {
-    margin-bottom: 10px;
-  }
-  
-  .employee-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .employee-table th, .employee-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
-  }
-  
-  .employee-table th {
-    background-color: #f4f4f4;
-  }
-  
-  .active {
-    background-color: green;
-    color: white;
-  }
-  
-  .inactive {
-    background-color: red;
-    color: white;
-  }
-  
+  width: 80%;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header-buttons button {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.import-button {
+  background-color: white;
+  color: black;
+}
+
+.new-employee-button {
+  background-color: blue;
+  color: white;
+}
+
+/* Estilos para la sección de búsqueda y orden */
+.search-sort-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 25%; /* Reduce el tamaño del campo */
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-left: auto; /* Alinea el campo de búsqueda a la derecha */
+}
+
+.sort-filter-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-filter-section label {
+  margin-right: 10px;
+}
+
+.filter-button {
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th, .employee-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #f4f4f4;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.inactive {
+  background-color: red;
+  color: white;
+}

@@ -33,7 +33,10 @@ const Sidebar = ({ firstName, initials, onNavigate }) => {
       </ul>
       <div className="menu-icon-container">
         <div className="initials-icon">{initials}</div>
-        <span className="welcome-text">Bienvenido/a, {firstName}</span>
+        <span className="welcome-text">
+          Bienvenido/a, <br />
+          {firstName}
+        </span>
         <FontAwesomeIcon
           icon={faEllipsisV}
           onClick={toggleLogoutMenu}
