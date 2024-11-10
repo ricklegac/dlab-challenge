@@ -4,7 +4,7 @@ import Sidebar from './Sidebar';
 import EmployeeList from './EmployeeList';
 import './Dashboard.css';
 
-const Dashboard = ({ firstName }) => {
+const Dashboard = ({ firstName, initials }) => {
   const [activeScreen, setActiveScreen] = useState('home');
 
   const handleNavigation = (screen) => {
@@ -18,7 +18,7 @@ const Dashboard = ({ firstName }) => {
 
   return (
     <div className="dashboard-container">
-      <Sidebar firstName={firstName} onNavigate={handleNavigation} />
+      <Sidebar firstName={firstName} initials={initials} onNavigate={handleNavigation} />
       <div className="content">
         {activeScreen === 'employees' && <EmployeeList />}
         {activeScreen === 'receipts' && <p>Recibos - Próximamente</p>}

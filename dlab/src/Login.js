@@ -1,5 +1,7 @@
 // src/Login.js
 import React, { useState } from 'react';
+import './Login.css';
+import dTalentLogo from './dTalentLogo.png';
 
 const Login = ({ onLoginSuccess }) => {
   const [username, setUsername] = useState('');
@@ -20,10 +22,9 @@ const Login = ({ onLoginSuccess }) => {
 
       if (response.ok) {
         const data = await response.json();
-        console.log('Data:', data); // Para verificar la estructura
         localStorage.setItem('token', data.token);
         setError('');
-        onLoginSuccess(data.user.firstName); // Ajusta para acceder a `firstName` dentro de `user`
+        onLoginSuccess(data.user.firstName);
       } else {
         setError('Invalid username or password');
       }
@@ -33,30 +34,32 @@ const Login = ({ onLoginSuccess }) => {
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Username:</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div className="login-background">
+      <div className="login-card">
+        <img src={dTalentLogo} alt="Logo" className="login-logo" />
+        <form onSubmit={handleLogin}>
+          <div className="input-group">
+            <label>Username</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <label>Password</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit" className="login-button">Login</button>
+        </form>
+        {error && <p className="error-text">{error}</p>}
+      </div>
     </div>
   );
 };
