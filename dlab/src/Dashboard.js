@@ -5,7 +5,7 @@ import EmployeeList from './EmployeeList';
 import './Dashboard.css';
 
 const Dashboard = ({ firstName, initials }) => {
-  const [activeScreen, setActiveScreen] = useState('home');
+  const [activeScreen, setActiveScreen] = useState('employees');
 
   const handleNavigation = (screen) => {
     if (screen === 'logout') {

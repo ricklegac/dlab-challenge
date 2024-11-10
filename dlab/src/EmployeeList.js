@@ -78,8 +78,8 @@ const EmployeeList = () => {
             className="filter-button"
             onClick={() => setFilterOption(sortOption)}
           >
-            Agregar filtro
-          </button>
+          Agregar filtro <span className="icon-plus">+</span>
+        </button>
         </div>
 
         <input

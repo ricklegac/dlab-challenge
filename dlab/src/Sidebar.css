@@ -1,112 +1,107 @@
-/* src/Sidebar.css */
 .sidebar {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 20px;
-  }
-  
-  .logo-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .logo {
-    width: 100px;
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu li {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    cursor: pointer;
-    color: #ddd;
-  }
-  
-  .menu li:hover {
-    color: white;
-  }
-  
-  .menu-icon {
-    margin-right: 15px; /* Espacio entre el icono y el texto */
-    color: #ffffff; /* Cambia este color al que prefieras */
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  /* Doble espacio entre el menú y el icono "Bienvenido, {firstName}" */
-  .menu-icon-container {
-    display: flex;
-    align-items: center;
-    margin-top: calc(2 * 300px); 
-    position: relative;
-  }
-  .menu-icon:hover {
-    color: #cccccc; /* Cambia el color cuando el cursor pasa sobre el icono */
-  }
-  
-  .initials-icon {
-    width: 35px;
-    height: 35px;
-    background-color: #007bff; /* Color azul de fondo */
-    color: #ffffff; /* Color blanco para las iniciales */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 20px; /* Espacio entre las iniciales y el texto "Bienvenido" */
-  }
-  
-  .welcome-text {
-    font-size: 14px;
-    margin-right: 30px;
-  }
-  
-  .menu-icon:hover {
-    color: #ccc;
-  }
-  
-  .logout-menu {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-bottom: 8px;
-    white-space: nowrap;
-  }
-  
-  .welcome-text-dropdown {
-    font-size: 14px;
-    color: #ddd;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .logout-menu button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  .logout-menu button:hover {
-    color: #ccc;
-  }
-  
+  width: 250px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.menu li:hover {
+  color: white;
+}
+
+.menu-icon {
+  margin-right: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Ajuste para que el contenedor "Bienvenido/a" esté en la parte inferior */
+.menu-icon-container {
+  display: flex;
+  align-items: center;
+  margin-top: auto; /* Empuja este contenedor hacia la parte inferior */
+  position: relative;
+}
+
+.menu-icon:hover {
+  color: #cccccc;
+}
+
+.initials-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #007bff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.welcome-text {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+.logout-menu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.welcome-text-dropdown {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.logout-menu button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-menu button:hover {
+  color: #ccc;
+}

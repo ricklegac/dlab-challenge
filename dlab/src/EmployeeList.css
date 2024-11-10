@@ -62,18 +62,23 @@
 }
 
 .filter-button {
-  margin-left: 10px;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
+  background: none;
+  color: #007bff; /* Color azul para el texto */
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Espacio entre el texto y el icono */
+  transition: color 0.3s ease;
 }
 
 .filter-button:hover {
-  background-color: #0056b3;
+  color: #0056b3; /* Color azul oscuro al pasar el cursor */
+}
+.icon-plus {
+  font-weight: bold;
+  font-size: 1.2rem; /* Ajusta el tamaño del icono según prefieras */
 }
 
 .employee-table {
