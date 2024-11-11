@@ -1,0 +1,50 @@
+/* src/EmployeeListHeader.css */
+
+.employee-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Color de fondo personalizado */
+    width: 100%; /* Asegura que tome todo el ancho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: Sombra para destacar */
+    margin-bottom: 20px; /* Espacio debajo para separar de la tabla */
+    border-radius: 8px;
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333; /* Color del texto del título */
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .import-button,
+  .new-employee-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .import-button {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .new-employee-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 1px solid transparent;
+  }
+  
+  .new-employee-button:hover {
+    background-color: #0056b3;
+  }
+  
