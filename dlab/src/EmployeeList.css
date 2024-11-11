@@ -1,4 +1,4 @@
-/* src/EmployeeList.css */
+
 
 .employee-list {
   width: 80%;
@@ -41,14 +41,14 @@
   align-items: center;
   margin-bottom: 20px;
 }
-
+/*TODO: REDUCIR EL CAMPO Y VER EL MARGIN */
 .search-input {
-  width: 25%; /* Reduce el tamaño del campo */
+  width: 25%; 
   padding: 0.5rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 0.9rem;
-  margin-left: auto; /* Alinea el campo de búsqueda a la derecha */
+  margin-left: auto; 
 }
 
 .sort-filter-section {
@@ -60,7 +60,7 @@
 .sort-filter-section label {
   margin-right: 10px;
 }
-
+/*TODO: */
 .filter-button {
   background: none;
   color: #007bff; /* Color azul para el texto */
@@ -89,7 +89,7 @@
 .employee-table th,
 .employee-table td {
   padding: 10px;
-  border: none; /* Quita el borde de las celdas */
+  border: none; /*VER PORQUE EL DESORDEN */
   text-align: left;
 }
 
@@ -118,13 +118,13 @@
   font-size: 0.9rem;
   font-weight: bold;
   text-align: center;
-  width: 80px; /* Ajusta el ancho según prefieras */
+  width: 80px; 
 }
 .initials-icon {
   width: 35px;
   height: 35px;
-  background-color: #007bff; /* Color azul de fondo */
-  color: #ffffff; /* Color blanco para las iniciales */
+  background-color: #007bff; 
+  color: #ffffff; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,13 +134,13 @@
   text-transform: uppercase;
 }
 .edit-icon {
-  color: #007bff; /* Color del ícono de edición */
+  color: #007bff; 
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .edit-icon:hover {
-  color: #0056b3; /* Cambia de color al pasar el cursor */
+  color: #0056b3; 
 }
 .pagination {
   display: flex;

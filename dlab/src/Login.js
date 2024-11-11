@@ -1,4 +1,3 @@
-// src/Login.js
 import React, { useState } from 'react';
 import './Login.css';
 import dTalentLogo from './dTalentLogo.png';

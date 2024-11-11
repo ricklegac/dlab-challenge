@@ -1,4 +1,4 @@
-// src/Sidebar.js
+
 import React, { useState } from 'react';
 import dTalentLogo from './dTalentLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

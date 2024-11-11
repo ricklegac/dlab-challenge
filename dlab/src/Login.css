@@ -1,4 +1,4 @@
-/* src/Login.css */
+
 
 * {
     box-sizing: border-box;
@@ -31,7 +31,7 @@
   }
   
   .login-logo {
-    width: 120px; /* Ajusta el tamaño según prefieras */
+    width: 120px; 
     margin-bottom: 1.5rem;
   }
   
@@ -85,7 +85,7 @@
     color: #e53e3e;
     font-size: 0.9rem;
   }
-  /* src/Login.css */
+
 
 .forgot-password {
   margin-top: 1rem;

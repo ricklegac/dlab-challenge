@@ -1,9 +1,9 @@
-// src/EmployeeList.js
+
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import './EmployeeList.css';
-import EmployeeListHeader from './EmployeeListHeader'; // Importa el nuevo componente
+import EmployeeListHeader from './EmployeeListHeader'; //SEPARAR NOMAS EL HEADER PARA PODER DARLE OTRO STYLE
 
 const EmployeeList = () => {
   const [employees, setEmployees] = useState([]);

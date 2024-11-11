@@ -1,21 +1,21 @@
-/* src/EmployeeListHeader.css */
+/*TODO: VER EL TEMA DEL ANCHO AQUII*/
 
 .employee-list-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Color de fondo personalizado */
-    width: 100%; /* Asegura que tome todo el ancho */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: Sombra para destacar */
-    margin-bottom: 20px; /* Espacio debajo para separar de la tabla */
+    background-color: #f0f0f0; 
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
     border-radius: 8px;
   }
   
   .header-title {
     margin: 0;
     font-size: 24px;
-    color: #333; /* Color del texto del título */
+    color: #333; 
   }
   
   .header-buttons {
