@@ -16,7 +16,7 @@ Sistema de autenticación mediante token.
 Clona este repositorio usando el siguiente comando:
 
 ```bash
-git clone https://github.com/usuario/proyecto-gestion-empleados.git
+https://github.com/ricklegac/dlab-challenge.git
 
 ```
 ### Instalación de dependencias
