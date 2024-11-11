@@ -87,9 +87,15 @@ Método: `GET`
 Descripción: Devuelve un enlace al archivo PDF de un recibo específico.
 Ejemplo de Petición:
 ```bash
-GET https://api.schneck.dlab.software/api/receipts/1978/file
+# GET https://api.schneck.dlab.software/api/receipts/1978/file
 Authorization: Token {token}
 ```
+
+# Ejecución y Uso
+1. Clona y configura el proyecto según las instrucciones anteriores.
+2. Inicia sesión para obtener un token de acceso.
+3. Navega entre las secciones de empleados y recibos, aplicando filtros y ordenamientos según sea necesario.
+4. Al hacer clic en una fila de recibo, se abrirá un modal para ver el archivo PDF del recibo, con opciones para descargar y abrir en una nueva ventana.
 
 
 
