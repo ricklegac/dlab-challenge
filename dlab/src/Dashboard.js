@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import EmployeeList from './EmployeeList';
+import ReceiptList from './ReceiptList'; // Importa el nuevo componente ReceiptList
 import './Dashboard.css';
 
 const Dashboard = ({ firstName, initials }) => {
@@ -21,7 +22,7 @@ const Dashboard = ({ firstName, initials }) => {
       <Sidebar firstName={firstName} initials={initials} onNavigate={handleNavigation} />
       <div className="content">
         {activeScreen === 'employees' && <EmployeeList />}
-        {activeScreen === 'receipts' && <p>Recibos - Próximamente</p>}
+        {activeScreen === 'receipts' && <ReceiptList />} {/* Muestra el componente ReceiptList */}
         {activeScreen === 'announcement' && <p>Comunicado - Próximamente</p>}
         {activeScreen === 'settings' && <p>Configuración - Próximamente</p>}
         {activeScreen === 'home' && <p>Selecciona una opción del menú para continuar.</p>}

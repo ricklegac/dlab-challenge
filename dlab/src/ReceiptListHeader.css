@@ -1,0 +1,46 @@
+/* src/ReceiptListHeader.css */
+
+.receipt-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e0e0e0; /* Color de fondo para el encabezado */
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .refresh-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .refresh-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .refresh-button svg {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+  }
+  
