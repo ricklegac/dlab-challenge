@@ -1,6 +1,6 @@
 ## Tecnologías Utilizadas
 
-- [React.js]([https://reactjs.org/docs/getting-started.html](https://react.dev/learn)): Una biblioteca de JavaScript para construir interfaces de usuario.
+- [React.js](https://react.dev/learn): Una biblioteca de JavaScript para construir interfaces de usuario.
 - [Font Awesome](https://fontawesome.com/docs): Biblioteca de iconos escalables utilizada para mejorar la interfaz visual.
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API): Interfaz de JavaScript para realizar peticiones HTTP a servidores de manera asíncrona.
 
