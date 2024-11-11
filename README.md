@@ -17,3 +17,10 @@ Clona este repositorio usando el siguiente comando:
 
 ```bash
 git clone https://github.com/usuario/proyecto-gestion-empleados.git
+
+### Instalación de dependencias
+
+Instala las dependencias del proyecto ejecutando el siguiente comando:
+
+```bash
+npm install
